@@ -1,7 +1,10 @@
 #include <iostream>
 
 int main() {
-    std::cout << "I like pizza!" << std::endl;
-    std::cout << "It's really good!" << '\n';
+    
+    int x = 5;
+
+    std::cout << x;
+
     return 0;
 }
