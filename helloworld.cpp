@@ -3,17 +3,14 @@
 
 int main()
 {
-    std:: string name;
-    int age;
+    double x = 3;
+    double y = 4;
+    double z;
 
-    std::cout << "How old are you?: ";
-    std::cin >> age;
+    //z = std::max(x,y);
+    z = std::min(x,y);
 
-    std::cout << "What is your name?: ";
-    std::getline(std::cin >> std::ws, name);
-
-    std::cout << "Hello " << name << "!" << std::endl;
-    std::cout << "You are " << age << " years old." << std::endl;
+    std::cout << z << std::endl;
 
     return 0;
 }
