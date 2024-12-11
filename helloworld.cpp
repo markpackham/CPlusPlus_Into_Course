@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <cmath>
 
 int main()
 {
@@ -7,8 +7,7 @@ int main()
     double y = 4;
     double z;
 
-    //z = std::max(x,y);
-    z = std::min(x,y);
+    z = floor(3.14);
 
     std::cout << z << std::endl;
 
