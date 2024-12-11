@@ -13,7 +13,9 @@ namespace second
 int main()
 {
 
-    int x = 0;
+    using namespace first;
+
+    std:: cout << x << std::endl;
 
     return 0;
 }
