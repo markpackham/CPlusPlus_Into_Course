@@ -4,20 +4,30 @@ using namespace std;
 
 int main()
 {
-    
-    double a;
-    double b;
-    double c;
+    char grade = 'C'    ;
 
-    cout << "Enter side A: ";
-    cin >> a;
+    switch (grade)
+    {
+    case 'A':
+        cout << "You did great";
+        break;
 
-    cout << "Enter side B: ";
-    cin >> b;
+    case 'B':
+        cout << "You did ok";
+        break;
 
-    c = sqrt(pow(a,2) + pow(b,2));
+    case 'C':
+        cout << "You passed";
+        break;
 
-    cout << "side C: " << c;
+    case 'D':
+        cout << "You failed";
+        break;
+
+    default:
+        cout << "Something went wrong";
+        break;
+    }
 
     return 0;
 }
