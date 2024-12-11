@@ -1,15 +1,23 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
 
 int main()
 {
-    double x = 3;
-    double y = 4;
-    double z;
+    
+    double a;
+    double b;
+    double c;
 
-    z = floor(3.14);
+    cout << "Enter side A: ";
+    cin >> a;
 
-    std::cout << z << std::endl;
+    cout << "Enter side B: ";
+    cin >> b;
+
+    c = sqrt(pow(a,2) + pow(b,2));
+
+    cout << "side C: " << c;
 
     return 0;
 }
