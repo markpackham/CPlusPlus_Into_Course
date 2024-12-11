@@ -1,21 +1,13 @@
 #include <iostream>
+#include <vector>
 
-namespace first
-{
-    int x = 1;
-}
-
-namespace second
-{
-    int x = 2;
-}
+typedef std::string text_t;
 
 int main()
 {
+    text_t firstName = "Bob";
 
-    using namespace first;
-
-    std:: cout << x << std::endl;
+    std::cout << firstName << '\n';
 
     return 0;
 }
