@@ -10,18 +10,13 @@ int main()
     name.clear();
     getline(cin, name);
 
-    if (name.length() > 100)
-    {
-        cout << "Your name can't be over 100 chars";
-    }
-    else if (name.empty())
-    {
-        cout << "You cannot have an empty name";
-    }
-    else
-    {
-        cout << "Welcome " << name.append("@gmail.com");
-    }
+    name.insert(0, "@");
+
+    cout << name.find(' ');
+
+    cout << "\n";
+
+    cout << name.erase(0,2);
 
     return 0;
 }
