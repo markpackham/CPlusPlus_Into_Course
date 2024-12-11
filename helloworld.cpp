@@ -4,29 +4,21 @@ using namespace std;
 
 int main()
 {
-    char grade = 'C'    ;
+    string name;
 
-    switch (grade)
+    cout << "Enter your name: ";
+    getline(cin, name);
+
+    if (name.length() > 100)
     {
-    case 'A':
-        cout << "You did great";
-        break;
-
-    case 'B':
-        cout << "You did ok";
-        break;
-
-    case 'C':
-        cout << "You passed";
-        break;
-
-    case 'D':
-        cout << "You failed";
-        break;
-
-    default:
-        cout << "Something went wrong";
-        break;
+        cout << "Your name can't be over 100 chars";
+    }
+    else if (name.empty()){
+        cout << "You cannot have an empty name";
+    }
+    else
+    {
+        cout << "Welcome " << name;
     }
 
     return 0;
