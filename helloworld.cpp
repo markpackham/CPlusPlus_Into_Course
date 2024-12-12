@@ -14,10 +14,12 @@ void printNum();
 int main()
 {
 
-    string car[] = {"Mustang", "Corvette", "Camaro", "Popemobile"};
+    string cars[] = {"Mustang", "Corvette", "Camaro", "Popemobile"};
 
-    cout << car[0] << endl;
-    cout << car[1] << endl;
+    cars[0] = "Batmobile";
+
+    cout << cars[0] << endl;
+    cout << cars[1] << endl;
 
     return 0;
 }
