@@ -14,15 +14,10 @@ void printNum();
 int main()
 {
 
-    int myNum = -1000;
-    printNum();
-    // :: scope resolution operator so uses myNum = 333;
-    cout << ::myNum << endl;
+    string car[] = {"Mustang", "Corvette", "Camaro", "Popemobile"};
+
+    cout << car[0] << endl;
+    cout << car[1] << endl;
 
     return 0;
-}
-
-void printNum(){
-    int myNum = 2;
-    cout << myNum << endl;
 }
