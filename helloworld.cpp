@@ -4,19 +4,11 @@ using namespace std;
 
 int main()
 {
-    string name;
+    srand(time(NULL));
 
-    cout << "Enter your name: ";
-    name.clear();
-    getline(cin, name);
+    int dice = (rand() % 6) + 1;
 
-    name.insert(0, "@");
-
-    cout << name.find(' ');
-
-    cout << "\n";
-
-    cout << name.erase(0,2);
+    cout << dice << endl;
 
     return 0;
 }
