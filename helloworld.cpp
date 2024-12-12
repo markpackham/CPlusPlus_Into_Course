@@ -3,20 +3,24 @@
 #include <ctime>
 using namespace std;
 
-double square(double length);
+void bakePizza();
+void bakePizza(string topping1);
 
 int main()
 {
 
-    double length = 5.0;
-    double area = square(length);
-
-    cout << "Area: " << area << endl;
+    bakePizza();
+    bakePizza("ham");
 
     return 0;
 }
 
-double square(double length)
+void bakePizza()
 {
-    return length * length;
+    cout << "Here is your pizza!\n";
+}
+
+void bakePizza(string topping1)
+{
+    cout << "Here is your " << topping1 << " pizza!\n";
 }
