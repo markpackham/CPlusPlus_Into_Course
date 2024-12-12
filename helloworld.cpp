@@ -14,12 +14,9 @@ void printNum();
 int main()
 {
 
-    string cars[] = {"Mustang", "Corvette", "Camaro", "Popemobile"};
+    double gpa = 2.5;
 
-    cars[0] = "Batmobile";
-
-    cout << cars[0] << endl;
-    cout << cars[1] << endl;
+    cout << sizeof(gpa) << " bytes" << endl;
 
     return 0;
 }
