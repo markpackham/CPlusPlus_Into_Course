@@ -7,27 +7,22 @@ void bakePizza();
 void bakePizza(string topping1);
 void bakePizza(string topping1, string topping2);
 
+int myNum = 333;
+
+void printNum();
+
 int main()
 {
 
-    bakePizza();
-    bakePizza("bacon");
-    bakePizza("ham", "pineapple");
+    int myNum = -1000;
+    printNum();
+    // :: scope resolution operator so uses myNum = 333;
+    cout << ::myNum << endl;
 
     return 0;
 }
 
-void bakePizza()
-{
-    cout << "Here is your pizza!\n";
-}
-
-void bakePizza(string topping1)
-{
-    cout << "Here is your " << topping1 << " pizza!\n";
-}
-
-void bakePizza(string topping1, string topping2)
-{
-    cout << "Here is your " << topping1 << " & " << topping2 << " pizza!\n";
+void printNum(){
+    int myNum = 2;
+    cout << myNum << endl;
 }
