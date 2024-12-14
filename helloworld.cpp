@@ -3,22 +3,25 @@
 #include <ctime>
 using namespace std;
 
-void bakePizza();
-void bakePizza(string topping1);
-void bakePizza(string topping1, string topping2);
-
-int myNum = 333;
-
-void printNum();
+double getTotal(double prices[], int size);
 
 int main()
 {
 
- string students[] = {"Bob","John","Frank","Sandy"};
+    double prices[] = {4.99, 5.99, 6.99, 7.99};
+    int size = sizeof(prices) / sizeof(prices[0]);
+    double total = getTotal(prices, size);
 
-// For Each :
-for(string student : students){
-    cout << student << endl;
-}
+    cout << "Total: $" << total << endl;
     return 0;
+}
+
+double getTotal(double prices[], int size)
+{
+    double total = 0;
+    for (int i = 0; i < size; i++)
+    {
+        total += prices[i];
+    }
+    return total;
 }
