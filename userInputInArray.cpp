@@ -24,11 +24,12 @@ int main()
         }
     }
 
-    cout << "Your favorite foods are: \n\n";
+    cout << "Your favorite foods are: \n";
 
-    for (string food : foods)
+    // Keep looping while foods is not empty
+    for (int i = 0; !foods[i].empty(); i++)
     {
-        cout << food << endl;
+        cout << foods[i] << '\n';
     }
 
     return 0;
