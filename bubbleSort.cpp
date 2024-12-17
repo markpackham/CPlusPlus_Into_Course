@@ -29,6 +29,13 @@ void sort(int array[], int size)
 
         for (int j = 0; j < size - i - 1; j++)
         {
+            // See if element on left greater than element on right
+            // then swap
+            if(array[j] > array[j + 1]){
+                temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+            }
         }
     }
 }
