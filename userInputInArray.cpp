@@ -9,8 +9,11 @@ int main()
 
     for (int i = 0; i < size; i++)
     {
-        cout << "Enter a food you like #" << i+1 << ": ";
+        cout << "Enter a food you like or 'q' to quit #" << i+1 << ": ";
         getline(cin, foods[i]);
+        if(foods[i] == "q"){
+            break;
+        }
     }
 
     cout << "Your favorite foods are: \n\n";
